@@ -1,5 +1,8 @@
+import carsData from "@/data/carsData";
+
 function Sport() {
-  return <div>Sport</div>;
+  const sportCars = carsData.filter((car) => car.category == "sport");
+  return <CarList data={sportCars} />;
 }
 
 export default Sport;
